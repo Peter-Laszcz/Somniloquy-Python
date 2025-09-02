@@ -149,7 +149,7 @@ def options():
 
 
 def dataview():
-    browser(r, pd.read_parquet('dataframe.parquet'))
+    browser(r, pd.read_parquet(os.getcwd()+"/data/dataframe.parquet"))
 
 
 def transcribe():
