@@ -10,6 +10,7 @@ Currently limited to development build installs only (more technical):
  - Run the following:
 
 	    gh repo fork --clone=true --remote=true Peter-Laszcz/Somniloquy-Python
+   		cd Somniloquy-Python
 	    conda config --set channel_priority strict
 	    conda deactivate
 	    conda env remove --name somniloquy
