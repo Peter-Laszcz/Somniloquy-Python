@@ -7,7 +7,7 @@ Currently limited to development build installs only (more technical):
 
  - Install git, GitHub CLI, and Miniconda.
  - `cd` to your preferred directory.
- - Run the following:
+ - Linux users: Run the following:
 
 	    gh repo fork --clone=true --remote=true Peter-Laszcz/Somniloquy-Python
    		cd Somniloquy-Python
@@ -15,6 +15,14 @@ Currently limited to development build installs only (more technical):
 	    conda deactivate
 	    conda env remove --name somniloquy
 	    conda env create --name somniloquy --file data/environment.yml
+ - Windows users: Run the following:
+
+	    gh repo fork --clone=true --remote=true Peter-Laszcz/Somniloquy-Python
+   		cd Somniloquy-Python
+	    conda config --set channel_priority strict
+	    conda deactivate
+	    conda env remove --name somniloquy
+	    conda env create --name somniloquy --file data/environment_windows.yml
 
 ## Running
 From within your Somniloquy directory, run:
